@@ -11,7 +11,7 @@ function longestSubString(s) {
         }
         charSet.add(char);
         currentSubstring += char;
-        if (currentSubstring.length > longestSubString.length) {
+        if (currentSubstring.length > longestSubString.length) {       
             longestSubString = currentSubstring
         }
     }
