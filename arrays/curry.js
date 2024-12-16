@@ -24,3 +24,21 @@ const curriedAddition = curry(addition);
 console.log(curriedAddition(1)(2)(3)); // Output: 6
 console.log(curriedAddition(1, 2)(3)); // Output: 6
 console.log(curriedAddition(1)(2, 3)); // Output: 6
+
+
+console.log("curry another approch >>>>>>>")
+
+//---- old es5
+
+// function addCurry(a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c;
+//         }
+//     }
+// }
+
+//----- modern js(es6)
+const addCurry = (a) => (b) => (c) => a + b + c; 
+
+console.log(addCurry(2)(0)(5))
