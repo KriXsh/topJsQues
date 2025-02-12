@@ -6,3 +6,5 @@ function rotateArray(arr, k) {
 }
 
 rotateArray([1, 2, 3, 4, 5], 2);
+
+//time complexcity - O(n)

@@ -27,3 +27,22 @@ function majorityElement(arr){
 // const arr = [1,2,4,6,8,9,9,9,9.9,9,5]
 const arr = [3, 3, 4, 2, 3, 3, 3, 1];
 console.log(majorityElement(arr));
+
+
+/*function majorityElement(nums) {
+    let candidate = null;
+    let count = 0;
+
+    for (let num of nums) {
+        if (count === 0) {
+            candidate = num;
+        }
+        count += (num === candidate) ? 1 : -1;
+    }
+
+    return candidate;
+}
+
+const arr = [3, 3, 4, 2, 3, 3, 3, 1];
+console.log(majorityElement(arr)); // Output: 3
+*/
